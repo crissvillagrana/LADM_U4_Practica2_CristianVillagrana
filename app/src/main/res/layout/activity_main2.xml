@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUsuario"
+        android:padding="20dp"
+        android:text="Bienvenido"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear Evento"
+        android:layout_below="@+id/txtUsuario"
+        android:id="@+id/btncrear"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Código de Evento"
+        android:layout_below="@+id/btncrear"
+        android:id="@+id/txtcodigo"/>
+
+    <Button
+        android:id="@+id/btnbuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtcodigo"
+        android:text="Buscar Evento" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/galeria"
+        android:src="@drawable/logo"
+        android:layout_below="@+id/txtcodigo"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subir fotos"
+        android:id="@+id/btnsubir"
+        android:layout_below="@+id/btnbuscar"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/galeria"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/galeria"
+        android:layout_below="@+id/btnsubir"
+        android:id="@+id/btnbloquear"
+        android:text="Bloquear" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/galeria"
+        android:layout_below="@+id/btnbloquear"
+        android:id="@+id/btncerrar"
+        android:text="Cerrar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtx"
+        android:layout_below="@id/galeria"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtx"
+        android:text="Mostrar imagenes"
+        android:id="@+id/btncargar"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btncargar"
+        android:id="@+id/lista"/>
+
+</RelativeLayout>
